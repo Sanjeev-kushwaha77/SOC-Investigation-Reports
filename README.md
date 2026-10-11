@@ -1,10 +1,7 @@
-Markdown
-
-````
 # Network Security Lab Portfolio
 ### IPsec VPN | MITM Analysis | Threat Detection | SOC Investigations
 
-![Platform](https://img.shields.io/badge/Firewall-OPNsense-orange?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-OPNsense-orange?style=for-the-badge)
 ![Virtualization](https://img.shields.io/badge/Virtualization-VMware-blue?style=for-the-badge)
 ![VPN](https://img.shields.io/badge/VPN-IPsec%20IKEv2-green?style=for-the-badge)
 ![IDS](https://img.shields.io/badge/IDS-Suricata-red?style=for-the-badge)
@@ -17,9 +14,22 @@ Markdown
 
 ## Overview
 
-This repository showcases four hands-on network security investigation reports developed in a controlled virtual laboratory environment. The projects explore secure VPN communication, firewall traffic filtering, ARP spoofing and Man-in-the-Middle (MITM) activity, and the detection of brute-force attempts and potential Command-and-Control (C2) beaconing.
+This repository contains four hands-on network security investigation reports developed in a controlled virtual laboratory environment. The projects explore secure VPN communication, firewall traffic filtering, ARP spoofing and Man-in-the-Middle (MITM) activity, and the detection of brute-force attempts and potential Command-and-Control (C2) beaconing.
 
-Each report documents the investigation objectives, laboratory configuration, testing methodology, collected evidence, technical observations, and defensive recommendations. The portfolio demonstrates practical learning in network security, security monitoring, and SOC investigation workflows.
+Each report documents the investigation objectives, laboratory configuration, testing methodology, collected evidence, technical observations, and defensive recommendations. The portfolio demonstrates practical experience in network traffic analysis, security validation, evidence collection, security alert investigation, and defensive detection techniques within a controlled virtual lab environment.
+
+---
+
+## Repository Contents
+
+| No. | Investigation Report | Primary Focus |
+|---|---|---|
+| 1 | [Site-to-Site IPsec VPN Tunnel](Site-to-Site%20IPsec%20VPN%20Tunnel.pdf) | IKEv2 configuration, tunnel establishment, and connectivity validation |
+| 2 | [Site-to-Site IPsec VPN Port Filtering](Site-to-Site%20IPsec%20VPN%20Port%20Filtering.pdf) | Firewall rules, permitted services, and blocked traffic validation |
+| 3 | [ARP Spoofing MITM and IPsec Validation](ARP%20Spoofing%20MITM%20%26%20IPsec%20Validation.pdf) | ARP spoofing, packet capture, IPsec encryption validation, and detection |
+| 4 | [Brute-Force and C2 Beaconing Detection](Brute-Force%20%26%20C2%20Beaconing%20Detection.pdf) | Authentication attack analysis, network beaconing, and SIEM alert triage |
+
+---
 
 ## Investigation Reports
 
@@ -72,7 +82,10 @@ This investigation explores the identification of repeated authentication failur
 - Perform authorized port scanning and service validation using Nmap.
 - Examine endpoint telemetry and security events using Sysmon and Wazuh.
 - Understand network intrusion detection through Suricata.
+- Investigate security events using Wazuh and Sysmon.
 - Identify detection limitations and recommend practical defensive improvements.
+
+---
 
 ## Tools and Technologies
 
@@ -80,7 +93,7 @@ This investigation explores the identification of repeated authentication failur
 |---|---|
 | OPNsense | Firewall configuration and IPsec VPN management |
 | VMware Workstation | Virtualized laboratory infrastructure |
-| Kali Linux | Authorized security testing |
+| Kali Linux | Authorized security testing and attack simulation |
 | Windows 10 | Endpoint testing and event collection |
 | Wireshark | Packet capture and protocol analysis |
 | Nmap | Port scanning and service discovery |
@@ -89,6 +102,8 @@ This investigation explores the identification of repeated authentication failur
 | Sysmon | Windows endpoint telemetry |
 | Netcat | Network connectivity testing |
 | arpspoof | ARP spoofing simulation |
+
+---
 
 ## Investigation Workflow
 
@@ -112,49 +127,3 @@ Validate Findings
           |
           v
 Document Results and Recommendations
-```
-
-## Key Learning Outcomes
-
-- Understanding IPsec VPN establishment and encrypted communication.
-- Evaluating firewall policies through controlled testing.
-- Recognizing indicators of ARP spoofing and MITM activity.
-- Analyzing packet captures and network communication patterns.
-- Investigating authentication events and potentially suspicious outbound traffic.
-- Correlating endpoint and network evidence during investigations.
-- Reviewing SIEM alerts and considering false-positive scenarios.
-- Documenting findings using a structured, evidence-based approach.
-
-## References and Technical Documentation
-
-| Resource | Purpose |
-|---|---|
-| [OPNsense Documentation](https://docs.opnsense.org/) | Firewall and VPN configuration |
-| [MITRE ATT&CK](https://attack.mitre.org/) | Adversary tactics and techniques |
-| [Wazuh Documentation](https://documentation.wazuh.com/) | Security monitoring and SIEM |
-| [Suricata Documentation](https://docs.suricata.io/) | Network intrusion detection |
-| [Microsoft Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) | Windows event telemetry |
-
-## Disclaimer
-
-These reports are intended for educational purposes and authorized security testing in a controlled laboratory environment.
-
-- Perform security testing only on systems and networks for which authorization has been granted.
-- Interpret findings according to the evidence collected and the limitations of the laboratory environment.
-- Do not publish credentials, sensitive information, or private organizational data.
-- Treat suspicious activity as an investigation lead until sufficient evidence supports a conclusion.
-
-## About This Portfolio
-
-I am developing practical skills in Security Operations Center (SOC) analysis, network security, threat detection, and incident investigation.
-
-This portfolio documents my hands-on learning through virtual lab configuration, network traffic analysis, firewall validation, security alert investigation, and evidence-based technical reporting. It reflects my ongoing development toward defensive security and Blue Team operations.
-
-## License and Usage
-
-These reports are shared for educational and professional portfolio purposes. Please consult each individual report for its methodology, supporting evidence, limitations, and usage conditions.
-
----
-
-**Portfolio Focus:** SOC Analysis | Blue Team | Network Security | Threat Detection | Incident Investigation
-````
